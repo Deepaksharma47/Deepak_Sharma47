@@ -6,7 +6,6 @@ import { sendMail } from "../config/mailConnect"
 import bcrypt   from "bcrypt"
 import { passwordToHassed } from "../utilities/hassedPassword"
 import { welcomeEmail } from "../emailTemplates/welcomeEmail"
-import { stat } from "node:fs"
 
 interface payloadInterface{
     firstName:string,

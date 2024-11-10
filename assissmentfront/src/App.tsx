@@ -5,7 +5,6 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import AgencyDeshboard from './pages/AgencyDeshboard';
 import SeekerDashBoard from './pages/SeekerDashBoard';
-import Error from './pages/Error';
 import { useSelector } from 'react-redux';
 import OpenRoute from './components/routeComponent/OpenRoute';
 import ChatBox from './pages/ChatBox';  

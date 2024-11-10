@@ -30,7 +30,7 @@ export const createValidationSchema = () => {
                 const { user_type } = context.parent;
                 if (user_type === "Job_Seeker") {
                     return Yup.mixed().required("Select Resume")
-                    .test("fileFormat","only PDF and DOCs are allowed",(value) => value && SUPPORTED_FILE.includes((value as any)?.type) )
+                    .test("fileFormat","only PDF and DOCs are allowed",(value) => value && value instanceof File && SUPPORTED_FILE.includes((value)?.type) )
                 }
                 return Yup.mixed().nullable();
 
